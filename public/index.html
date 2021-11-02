@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Broperti</title>
+
+    <link rel="stylesheet" href="css/tailwind.css" />
+</head>
+
+<body class="font-poppins">
+    <header class="bg-navy">
+        <main>
+            <nav class="pt-4 md:pt-10 max-w-screen-2xl mx-auto px-4 lg:px-24 relative">
+                <div class="flex flex-col items-stretch lg:flex-row lg:items-center">
+                    <div class="flex items-center justify-between">
+                        <!-- LOGO -->
+                        <div>
+                            <img src="assets/icons/logo.svg" alt="broperti" />
+                        </div>
+                        <!-- RESPONSIVE NAVBAR BUTTON TOGGLER -->
+                        <div>
+                            <button class="block p-1 focus:outline-none lg:hidden mobile-menu-button"
+                                data-target="#navigation">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-7 h-7 text-white" x-show="!showMenu"
+                                    fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M4 6h16M4 12h16M4 18h7" />
+                                    <path stroke-linecap="round" class="hidden" stroke-linejoin="round" stroke-width="2"
+                                        d="M6 18L18 6M6 6l12 12" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="hidden w-full mobile-menu lg:block" id="navigation">
+                        <div
+                            class="flex flex-col items-baseline justify-between mt-6 lg:flex-row lg:items-center lg:mt-0">
+                            <div class="flex flex-col w-full mx-0 lg:flex-row lg:mx-auto lg:w-max">
+                                <a href="#" class="nav-link-item cursor-pointer active">Home</a>
+                                <a href="#" class="nav-link-item cursor-pointer">Featured</a>
+                                <a href="#" class="nav-link-item cursor-pointer">Stories</a>
+                                <a href="#" class="nav-link-item cursor-pointer">Partners</a>
+                                <a href="#" class="nav-link-item cursor-pointer">About</a>
+                            </div>
+                            <div class="flex lg:w-max w-full text-center">
+                                <a href="#" class="py-3 px-8 bg-ogreen-1 rounded w-full my-3 lg:my-0">
+                                    <span class="font-medium text-lg text-dark-1">My Account</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+
+            <!-- background image -->
+            <div class="mx-auto max-w-screen-2xl relative">
+                <div class="flex justify-end">
+                    <img src="assets/images/header-bg.png" alt="broperti" class="absolute top-0 z-0 -mt-28" />
+                </div>
+            </div>
+
+            <!-- Content -->
+            <div class="pt-28 pb-32 max-w-screen-2xl mx-auto px-4 lg:px-24 relative">
+                <div class="grid grid-cols-12">
+                    <div class="lg:col-span-8 col-span-12">
+                        <div class="headline font-semibold text-white text-5xl leading-tight lg:leading-snug">
+                            Discover Your <br> Own Future Empire <br> Easy Cozy
+                        </div>
+                        <p class="font-normal text-base leading-8 text-grayish-1 mt-5">
+                            Saving much time by finding the match one <br>
+                            using our algorithm that we designed
+                        </p>
+                        <form action="#" class="mt-15">
+                            <div
+                                class="bg-white p-5 rounded-md md:inline-flex space-y-5 md:space-y-0 space-x-0 md:space-x-5 md:flex-row items-center">
+                                <div class="flex flex-col gap-1">
+                                    <label for="location" class="font-normal text-sm text-dark-2">Location</label>
+                                    <input type="text" id="location" value="Sumatera Tenggara"
+                                        class="placeholder-gray-400  text-dark-2 p-10px bg-light-1 font-medium text-base rounded-md focus:outline-none focus:ring-opacity-50 focus:ring-2 focus:ring-ogreen-1" />
+                                </div>
+                                <div class="flex flex-col gap-1">
+                                    <label for="type" class="font-normal text-sm text-dark-2">Type</label>
+                                    <input type="text" id="type" placeholder="Type" value="Apartment"
+                                        class="text-dark-2 p-10px placeholder-gray-400 bg-light-1 font-medium text-base rounded-md focus:outline-none focus:ring-opacity-50 focus:ring-2 focus:ring-ogreen-1"" />
+                                </div>
+                                <div class=" flex flex-col">
+                                    <a href="" class="py-5 px-30px bg-ogreen-1 rounded text-center">
+                                        <span class="font-medium text-dark-1 text-lg">Explore Now</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </header>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="js/navbar-toggler.js"></script>
+</body>
+
+</html>

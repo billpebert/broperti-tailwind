@@ -1,0 +1,13 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.nav-link-item {
+  @apply lg:mx-5 mx-2 my-3 lg:my-0 text-lg font-normal text-grayish-1;
+}
+
+.nav-link-item.active {
+  @apply text-ogreen-1 font-medium;
+}
