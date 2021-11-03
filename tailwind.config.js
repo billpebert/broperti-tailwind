@@ -37,14 +37,22 @@ module.exports = {
       },
       spacing: {
         15: '60px',
+        25: '100px',
         '10px': '10px',
         '30px': '30px',
+        '50px': '50px',
+        '420px': '420px',
+        '550px': '550px',
       },
       borderRadius: {
         10: '10px',
         25: '25px',
         'badge': '0 0 20px 0',
 
+      },
+      fontSize: {
+        '22px': '22px',
+        '32px': '32px',
       }
     },
   },

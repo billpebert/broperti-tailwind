@@ -5,9 +5,9 @@
 @tailwind utilities;
 
 .nav-link-item {
-  @apply lg:mx-5 mx-2 my-3 lg:my-0 text-lg font-normal text-grayish-1;
+  @apply mx-2 my-3 text-lg font-normal lg:mx-5 lg:my-0 text-grayish-1;
 }
 
 .nav-link-item.active {
-  @apply text-ogreen-1 font-medium;
+  @apply font-medium text-ogreen-1;
 }
