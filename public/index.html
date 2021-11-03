@@ -11,9 +11,11 @@
 </head>
 
 <body class="font-poppins">
+
+    <!-- START: HEADER -->
     <header class="bg-navy">
         <main>
-            <nav class="relative px-4 pt-4 mx-auto md:pt-10 max-w-screen-2xl lg:px-24">
+            <nav class="relative z-10 px-4 pt-4 mx-auto md:pt-10 max-w-screen-2xl lg:px-24">
                 <div class="flex flex-col items-stretch lg:flex-row lg:items-center">
                     <div class="flex items-center justify-between">
                         <!-- LOGO -->
@@ -39,11 +41,11 @@
                         <div
                             class="flex flex-col items-baseline justify-between mt-6 lg:flex-row lg:items-center lg:mt-0">
                             <div class="flex flex-col w-full mx-0 lg:flex-row lg:mx-auto lg:w-max">
-                                <a href="#" class="cursor-pointer nav-link-item active">Home</a>
-                                <a href="#" class="cursor-pointer nav-link-item">Featured</a>
-                                <a href="#" class="cursor-pointer nav-link-item">Stories</a>
-                                <a href="#" class="cursor-pointer nav-link-item">Partners</a>
-                                <a href="#" class="cursor-pointer nav-link-item">About</a>
+                                <a href="#" class="nav-link-item active">Home</a>
+                                <a href="#" class="nav-link-item">Featured</a>
+                                <a href="#" class="nav-link-item">Stories</a>
+                                <a href="#" class="nav-link-item">Partners</a>
+                                <a href="#" class="nav-link-item">About</a>
                             </div>
                             <div class="flex w-full text-center lg:w-max">
                                 <a href="#" class="w-full px-8 py-3 my-3 rounded bg-ogreen-1 lg:my-0">
@@ -84,11 +86,11 @@
                                 <div class="flex flex-col gap-1">
                                     <label for="type" class="text-sm font-normal text-dark-2">Type</label>
                                     <input type="text" id="type" placeholder="Type" value="Apartment"
-                                        class="text-base font-medium placeholder-gray-400 rounded-md text-dark-2 p-10px bg-light-1 focus:outline-none focus:ring-opacity-50 focus:ring-2 focus:ring-ogreen-1"" />
+                                        class="text-base font-medium placeholder-gray-400 rounded-md text-dark-2 p-10px bg-light-1 focus:outline-none focus:ring-opacity-50 focus:ring-2 focus:ring-ogreen-1" />
                                 </div>
                                 <div class="flex flex-col ">
-                                    <a href="" class="py-5 text-center rounded  px-30px bg-ogreen-1">
-                                    <span class="text-lg font-medium text-dark-1">Explore Now</span>
+                                    <a href="" class="py-5 text-center rounded px-30px bg-ogreen-1">
+                                        <span class="text-lg font-medium text-dark-1">Explore Now</span>
                                     </a>
                                 </div>
                             </div>
@@ -98,6 +100,7 @@
             </div>
         </main>
     </header>
+    <!-- END: HEADER -->
 
     <!-- START: FEATURES -->
     <section class="relative bg-light-2">
@@ -197,7 +200,8 @@
             </div>
 
             <div class="mt-25">
-                <div class="grid items-center grid-cols-12 divide-x-2 divide-gray-200 divide-solid">
+                <div
+                    class="grid items-center divide-x-0 divide-gray-200 gap-14 md:divide-x-2 md:grid-cols-12 md:gap-0 divide-solid">
                     <div class="flex flex-col col-span-4 gap-2 text-center">
                         <div class="text-4xl font-medium text-dark-3">
                             15,600
@@ -222,6 +226,139 @@
     </section>
     <!-- END: FEATURES -->
 
+    <!-- START: GALLERY -->
+    <section class="bg-white">
+        <main class="px-4 pb-48 mx-auto lg:px-24 max-w-screen-2xl pt-25">
+            <div class="flex flex-col md:items-center md:justify-between md:flex-row">
+                <div class="font-medium capitalize text-32px text-dark-3">
+                    You're probably <br> gonna love these
+                </div>
+                <div class="mt-5 uppercase md:text-right md:mt-0">
+                    <a href="#" class="text-base font-normal underline text-grayish-1">View all recommendation</a>
+                </div>
+            </div>
+
+            <div class="gallery-carousel mt-50px">
+                <div class="flex flex-row gap-16 overflow-hidden overflow-x-auto flex-nowrap hide-scroll">
+                    <!-- CARD: 1 -->
+                    <div class="flex flex-col gap-5">
+                        <!-- item image -->
+                        <div class="relative flex gallery-image w-293px h-380px">
+                            <img src="assets/images/card-1.jpg" alt="recommendation"
+                                class="object-cover w-full rounded-2xl" />
+                            <div class="absolute z-10 py-3 bg-white type px-7 rounded-br-3xl">
+                                <span class="text-lg font-normal capitalize text-purpish-2">Mansion</span>
+                            </div>
+                        </div>
+                        <!-- item details -->
+                        <div class="inline-flex flex-row items-center justify-between w-full details">
+                            <div class="flex flex-col">
+                                <span class="text-xl font-medium text-dark-1">De Park</span>
+                                <span class="text-base font-light text-grayish-2">Sullo, Kamasia</span>
+                            </div>
+                            <div class="text-xl font-medium text-ogreen-2">
+                                $592,000
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- CARD: 2 -->
+                    <div class="flex flex-col gap-5">
+                        <!-- item image -->
+                        <div class="relative flex gallery-image w-293px h-380px">
+                            <img src="assets/images/card-2.jpg" alt="recommendation"
+                                class="object-cover w-full rounded-2xl" />
+                            <div class="absolute z-10 py-3 bg-white type px-7 rounded-br-3xl">
+                                <span class="text-lg font-normal capitalize text-purpish-2">Apartment</span>
+                            </div>
+                        </div>
+                        <!-- item details -->
+                        <div class="inline-flex flex-row items-center justify-between w-full details">
+                            <div class="flex flex-col">
+                                <span class="text-xl font-medium text-dark-1">Yellow Glow</span>
+                                <span class="text-base font-light text-grayish-2">Palo, Inkopad</span>
+                            </div>
+                            <div class="text-xl font-medium text-ogreen-2">
+                                $88,000
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- CARD: 3 -->
+                    <div class="flex flex-col gap-5">
+                        <!-- item image -->
+                        <div class="relative flex gallery-image w-293px h-380px">
+                            <img src="assets/images/card-3.jpg" alt="recommendation"
+                                class="object-cover w-full rounded-2xl" />
+                            <div class="absolute z-10 py-3 bg-white type px-7 rounded-br-3xl">
+                                <span class="text-lg font-normal capitalize text-purpish-2">House</span>
+                            </div>
+                        </div>
+                        <!-- item details -->
+                        <div class="inline-flex flex-row items-center justify-between w-full details">
+                            <div class="flex flex-col">
+                                <span class="text-xl font-medium text-dark-1">Brown Gask</span>
+                                <span class="text-base font-light text-grayish-2">Lahu, Lamma</span>
+                            </div>
+                            <div class="text-xl font-medium text-ogreen-2">
+                                $190,300
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- CARD: 4 -->
+                    <div class="flex flex-col gap-5">
+                        <!-- item image -->
+                        <div class="relative flex gallery-image w-293px h-380px">
+                            <img src="assets/images/card-4.jpg" alt="recommendation"
+                                class="object-cover w-full rounded-2xl" />
+                            <div class="absolute z-10 py-3 bg-white type px-7 rounded-br-3xl">
+                                <span class="text-lg font-normal capitalize text-purpish-2">Mansion</span>
+                            </div>
+                        </div>
+                        <!-- item details -->
+                        <div class="inline-flex flex-row items-center justify-between w-full details">
+                            <div class="flex flex-col">
+                                <span class="text-xl font-medium text-dark-1">White Cow</span>
+                                <span class="text-base font-light text-grayish-2">Ihka, Hajjar</span>
+                            </div>
+                            <div class="text-xl font-medium text-ogreen-2">
+                                $188,000
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </main>
+    </section>
+    <!-- END: GALLERY -->
+
+    <footer class="flex justify-center px-4 mx-auto bg-light-2 max-w-screen-2xl lg:px-24 py-50px">
+        <div class="flex flex-col">
+            <section class="-mt-24 pb-50px">
+                <div class="inline-flex flex-col items-center w-full gap-5 p-5 rounded-md md:flex-row bg-dark-3">
+                    <div class="flex flex-col w-full gap-1">
+                        <label for="name" class="text-sm font-normal text-white">Full Name</label>
+                        <input type="text" id="name" placeholder="Full Name" value="Masayoshi Hazza"
+                            class="text-base font-medium placeholder-gray-400 rounded-md text-dark-2 p-10px bg-light-1 focus:outline-none focus:ring-opacity-50 focus:ring-2 focus:ring-ogreen-1" />
+                    </div>
+                    <div class="flex flex-col w-full gap-1">
+                        <label for="email" class="text-sm font-normal text-white">Email Address</label>
+                        <input type="text" id="email" placeholder="Full Name" value="masayoshi@bwa.co.id"
+                            class="text-base font-medium placeholder-gray-400 rounded-md text-dark-2 p-10px bg-light-1 focus:outline-none focus:ring-opacity-50 focus:ring-2 focus:ring-ogreen-1" />
+                    </div>
+                    <a href="#" class="w-full px-12 py-5 text-center rounded bg-ogreen-1">
+                        <span class="text-lg font-medium text-dark-1">Sign Up</span>
+                    </a>
+                </div>
+            </section>
+            <div class="text-lg font-light text-center text-grayish-3">
+                Copyright 2021. All Rights Reserved Pixel by BuildWith Angga.
+            </div>
+        </div>
+    </footer>
 
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"

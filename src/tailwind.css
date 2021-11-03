@@ -11,3 +11,7 @@
 .nav-link-item.active {
   @apply font-medium text-ogreen-1;
 }
+
+.hide-scroll::-webkit-scrollbar {
+  display: none;
+}

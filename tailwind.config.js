@@ -41,8 +41,13 @@ module.exports = {
         '10px': '10px',
         '30px': '30px',
         '50px': '50px',
+        '293px': '293px',
+        '380px': '380px',
         '420px': '420px',
         '550px': '550px',
+      },
+      maxWidth: {
+        293: '293px',
       },
       borderRadius: {
         10: '10px',
@@ -53,7 +58,7 @@ module.exports = {
       fontSize: {
         '22px': '22px',
         '32px': '32px',
-      }
+      },
     },
   },
   variants: {
